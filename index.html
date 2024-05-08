@@ -7,34 +7,41 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
+  <div class="container" id="container">
     <h1>Rock Paper Scissors</h1>
     <div class="game-container">
       <div class="player-choice">
-        <h2>Player</h2>
-        <div class="choice" id="player-choice"></div>
+        <h2>You</h2>
+        <div class="choice" id="player-choice">
+            <img src="player.png" alt="Your Choice">
+        </div>
       </div>
       <div class="computer-choice">
         <h2>Computer</h2>
-        <div class="choice" id="computer-choice"></div>
+        <div class="choice" id="computer-choice">
+            <img src="computer.png" alt="Computer Choice">
+        </div>
       </div>
     </div>
     <div class="result">
-      <h2 id="result-text">Choose your move</h2>
-      <button class="btn" id="rock">Rock</button>
-      <button class="btn" id="paper">Paper</button>
-      <button class="btn" id="scissors">Scissors</button>
+      <h2 id="result-text">Make your move</h2>
+      <div class="button-container">
+        <button class="btn" id="rock">Rock</button>
+        <button class="btn" id="paper">Paper</button>
+        <button class="btn" id="scissors">Scissors</button>
+      </div>
     </div>
     <div class="score">
-      <div class="player-score">
-        <h2>Player</h2>
-        <span id="player-score">0</span>
-      </div>
-      <div class="computer-score">
-        <h2>Computer</h2>
-        <span id="computer-score">0</span>
-      </div>
+        <div class="player-score">
+            <h2 id="player-name">Your Score</h2>
+            <span id="player-score">0</span>
+        </div>
+        <div class="computer-score">
+            <h2>Computer's Score</h2>
+            <span id="computer-score">0</span>
+        </div>
     </div>
+
   </div>
   <script src="script.js"></script>
 </body>
